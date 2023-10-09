@@ -1,0 +1,157 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+body {
+    background-color: #091820;
+  }
+
+/* .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #373738;
+    padding: 15px; 
+     height: 120px;
+  } */
+
+  
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    margin-left: auto ;
+}
+.flexContainer > div {
+    padding: 20px;
+    margin: 20px;
+  
+}
+
+
+.myWork {
+    padding: 100px;
+    margin: 20px;
+}
+.myWork#h1{
+    margin-bottom: 10px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas: 
+    "item1 item2 item2"
+    "item3 item4 item4";
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+.view-all-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .view-all-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #091820; /* Customize the background color */
+    color: white; /* Customize the text color */
+    border-radius: 5px;
+    border-color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .view-all-button a:hover {
+    background-color: #000000; /* Darker shade on hover */
+  }
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+nav ul li {
+    color: #ECF0F1;
+    padding: 0 10px;
+}
+
+.heroImg {
+    /* height: 900px; */
+    padding: 25px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    background-color: #373738;
+    padding: 10px 0; 
+    color: #ECF0F1;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+footer ul li {
+    padding: 0 5px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexContainer > div {
+        width: 100%;
+    }
+
+
+    .workGrid {
+        display: grid;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item1" 
+        "item2"
+        "item3" 
+        "item4";
+    }
+
+
+  }
